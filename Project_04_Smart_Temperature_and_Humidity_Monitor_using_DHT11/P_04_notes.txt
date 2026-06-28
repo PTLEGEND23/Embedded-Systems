@@ -1,0 +1,65 @@
+Task1
+DHT11 k pins and moudles ko  understand krna...
+
+Task2
+1 DHT11
+
+Task3
+1 DHT11
+1 Red LED
+1 300ohm resistor
+
+>>DHT11 is a digital sensor...
+
+>>DHT stands for Digital Humidity Temperature and 11 signifies the model number...
+
+>>DHT11 dono temperature and humidity batata...
+
+>>DHT11 temperature humidity sense krta -> DHT11 chips process internally -> digital data -> Arduino receive numbers...
+
+>>DHT11 uses its own library : readTemperature(),readHumidity()...
+
+>>DHT11 does all the measurement internally...
+
+>>The pins are labeled:
+-
+OUT
++
+which means:
+-    → GND
+OUT  → DATA (will go to Digital pin as it is Data pin)
++    → VCC
+
+>>Temperature mtlb toh tapmaan hogya koi chiz kitna garam ya thnda uska degree dekhkr bta skte...
+
+>>Humidty means Air mein kitni moisture / water vapor hai like garmi mei kam humidty dry lips dry skin and during monsoon more humidty chip chip and all...
+
+>>Inside the sensor:
+Temperature Data
+Humidity Data
+is sent using a specific digital communication protocol...
+
+>>ek class banayenge jiskemi object k use krenge fucntions calling k liye for various operations...
+
+>>analog pins of Arduino can also be used for I2C communication...
+
+>>LCD stands for Liquid Crystal Display...
+
+>>LCD Wiring
+For Arduino Uno:
+LCD GND → Arduino GND
+LCD VCC → Arduino 5V
+LCD SDA → Arduino A4
+LCD SCL → Arduino A5
+
+>>A4 → SDA (Data)
+  A5 → SCL (Clock)
+
+>>SDA=serial data SCL=serial clock
+
+>>I2C full form is Inter Integrate Circuit and is used to communicate with a central microcontroller over short distances 
+
+>>I2C must be physically attached to the LCD to translate:
+Arduino I2C
+↓
+LCD Commands
