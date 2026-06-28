@@ -1,0 +1,71 @@
+Task1
+Understanding PIR Sensor...whi mtlb kya h kaise pins h kisko kisase connect krna h and all stuffs...
+
+Task2
+1 PIR
+
+Task3
+1 PIR
+1 Blue LED
+1 300ohm resistor
+
+Task4
+1 PIR
+1 Active Buzzer
+1 Blue LED
+1 300ohm resistor
+
+
+>>PIR Sensor full form Passive Infrared Sensor
+
+>>It does not sends anything means it does not genrates infrared..it just sits and watches...
+
+>>It is a motion sensor...
+
+>>It detects: Changes in Infrared Radiation
+
+>>warm items radiates infrared jaise humans, animals, hot objects vessels...
+
+>>toh sensor k view mei warm body aayega toh infrared k pattern change hojyega jisase motion detec krega...
+
+>>toh ye white dome k kaam h large area se infrared lekr sensor mei focus krna usko...
+
+>>Dome is FRESNEL Lens...
+
+>>Inside the dome is a tiny PIR sensing element...
+
+>>do potentiometer ek k kaam h ki range of motion detect krne k liye (SENSITIVITY) and dusra k kaam h ki kitne der tk output active rhega motion detect krne k baad...
+
+>>BISS0001 ye PIR k controller chip h jiska kaam h PIR element ko read krna then signalprocess krna and output generate krna like brain of PIR...
+
+>>7133-1 ye voltage regulator h...
+
+>>Red/Black Tiny Cylinder woh ek diode h jismei black side is negative side and not black side is positive side..
+
+>>jo 4ro capacitors h woh kind of energy reservoirs h...
+
+>>Yellow piece is H/L mode jumper...
+
+>>H = Retriggering Mode
+Motion
+↓
+Output HIGH
+More motion detected
+↓
+Timer restarts
+Output stays HIGH
+
+>>L = Non-Retriggering Mode
+Motion
+↓
+Output HIGH
+Timer expires
+↓
+Output LOW
+Even if movement continues
+
+L Mode
+→ Short trigger
+H Mode
+→ Retriggering
+→ Stays HIGH while motion continues
