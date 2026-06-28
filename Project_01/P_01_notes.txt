@@ -1,0 +1,24 @@
+>>resitor ko lagate h taki current limit kr ske led mei
+
+
+1. BLINK_LED
+1 x Red LED
+1 x 1k Ohm Resistor
+
+2. TRAFFIC_LIGHT
+1 x Red LED
+1 x Yellow LED
+1 x Green LED
+3 x 150 Ohm Resistors
+
+3. BACK_AND_FORTH
+5 x Blue LEDs
+5 x 300 Ohm Resistors
+
+4. LED_CHASER
+5 x Blue LEDs
+5 x 300 Ohm Resistors
+
+5. PWM_FADING
+1 x Green LED
+1 x 300 Ohm Resistor
