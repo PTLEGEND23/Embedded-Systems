@@ -1,0 +1,67 @@
+Task1
+Understanding MQ2 Sensor...whi mtlb kya h kaise pins h kisko kisase connect krna h and all stuffs...
+
+Task2(using A0)
+1 MQ2 Sensor
+
+Task3(using A0)
+1 MQ2 Sensor
+1 Active Buzzer
+
+Task4(using D0)
+1 MQ2 Sensor
+
+Task5(using D0)
+1 MQ2 Sensor
+1 Active Buzzer
+1 Red Led
+1 300ohm resistor
+
+
+>>MQ Sensor stands for Metal Oxide...
+
+>>MQ-2: Detects LPG, smoke, alcohol, propane, and hydrogen...
+
+>>The blue screw-like thing: Potentiometer which adjusts the threshold used by:DO (Digital Output)...
+
+>>AO = Learn the sensor
+  DO = Use the sensor
+
+>>MQ2 contains a tiny heating element inside that metal mesh can...
+
+>>ye active buzzer was working on active low...mtlb jb buzzer bajana h toh digitalwrite ko LOW set kro and off pr HIGH kro jiske hisaab se buzzer bjega...
+
+>>The MQ2 sensor does not respond instantaneously.
+A short detection delay and recovery period were observed during testing due to the sensor's operating characteristics and gas diffusion in air...
+
+>>\\\*\\\*What is DO?\\\*\\\*
+Inside the MQ2 module there's a small comparator chip.
+It continuously does:
+AO Value
+↓
+Compare with Threshold
+↓
+Output 0 or 1
+The threshold is set by: Blue Potentiometer on the module...
+
+>>So instead of Arduino doing:
+if(value > 140)
+the MQ2 module itself can decide
+Gas Detected
+↓
+DO changes state
+
+>>AO → Analog Output
+  DO → Digital Output
+
+>>after connecting mq2 D0 with the Arduino,we see 1 in serial monitor meaning D0 is High/Digital state=1
+
+>>The potentiometer controls: DO switching threshold
+
+>>DO = 0
+↓
+Output LED ON
+
+>>DO = 1
+↓
+Output LED OFF
