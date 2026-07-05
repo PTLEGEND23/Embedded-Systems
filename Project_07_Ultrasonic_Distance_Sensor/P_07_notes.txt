@@ -1,0 +1,58 @@
+Task 1
+Simple understanding basics abt HC-SR04 sensor...
+
+Task 2
+1 HC-SR04
+
+Task 3
+1 HC-SR04
+1 Buzzer
+1 Green LED
+1 300ohm resistor
+
+
+>> HC-SR04 stands is Sonar Radiation sensor...HC company manufacturer ka naam...
+
+>>SONAR stands for Sound Navigation and Ranging...
+
+>> It has 4 pins:
+VCC->
+Trig->
+Echo->
+GND->
+
+>>This sensor has two signal pins: TRIG ECHO meaning Arduino do both talking and listening...
+
+>>2 eyes type one sends wave other receives it...these waves are ultrasonic sound waves...
+
+>>The HC-SR04 uses around 40kHz greater than human(20-20kHz)...
+
+>>Working is like that it will send waves hit object waves comeback calculate distance...
+
+>>Piche jo R and C wala chiz h woh Resistors and Capacitors h...
+
+>>Distance=(Speed\\\\\\\*Time)/2 this is how hcsr04 works kyunki we need distance of the object which got hit by sound waves if we wont divide by 2 it will tell us the total distance waves covered...
+
+>>Time of flight means total time taken	by something to travel from one point to another...
+
+>>TRIG = Arduino talks
+ECHO = Sensor replies
+
+>>the HC-SR04 makes the ECHO pin HIGH and it stays high until the wave is received back and for how long it is high is being calculated by pulseIn()
+
+>>The HC-SR04 doesn't send just one ultrasonic wave.
+It sends 8 ultrasonic pulses in a burst.
+Why?
+Because one tiny pulse might be weak.
+A burst is much easier to detect after reflection.
+
+>>pulseIn() returns a time in microseconds...
+
+>>distance will be calculated in cm...
+
+>>speed of soun =343 m/s...
+
+>>so ssara chiz milakr distance=duration * 0.0343 /2 (343m/s converted into 0.0343 cm/us)...
+
+>>The HC-SR04 measures from the front face of the ultrasonic transducers (the "eyes"), not from where the module is plugged into the Arduino.
+ 
