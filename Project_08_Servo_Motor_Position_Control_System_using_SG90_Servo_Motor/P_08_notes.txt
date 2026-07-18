@@ -1,0 +1,36 @@
+Task1
+Simple understanding of what and how servo works...
+
+Task2
+1 Servo motor
+
+Task3
+1 Servo motor
+
+>>SG90 stands for Servo Gear 90 degrees(0-180 total)...
+
+>>Inside the servo there are actually three main things:
+SG90
+├── Small DC Motor
+├── Gear Train
+├── Control PCB
+└── Position Feedback Potentiometer
+
+>>It has 3 wires:
+Brow-> GND
+Red-> VCC
+Yellow/Orange-> Signal(PWM)
+
+>>White pieces are called Servo Horns...
+
+>>Inside servo there is potentiometer which measures its position mtlb potentiometer batata h ki abhi aur rotate kro ya bs hogya to output shaft which is connected together with potentiometer...
+
+>>Servo ki khud ki library us ehoti h...
+
+>>Servo myservo krke apna servomotor ko define krenge...
+
+>>myservo.attach(pin) krke batayenge ki mera servo kaha lga hua h...
+
+>>myservo.write(angle) krke batayenge ki kitna angle tk roate hona h...
+
+>>
