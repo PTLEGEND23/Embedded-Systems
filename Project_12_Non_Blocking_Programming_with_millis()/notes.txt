@@ -1,0 +1,10 @@
+>>unsigned long previousTime = 0;
+ungined long is a datatype which stores large positive numbers
+
+>>millis()
+returns the number of milliseconds since the Arduino started running the program
+
+>>digitalWrite(LED, !digitalRead(LED));
+this is use for toggeling the currentstate of LED
+
+>>using delay is like when Arduino encounterse delay it stops everything and after delay is over it does the thing bt using millis is like it can do multiple things together at the same time having different timer for different things...
